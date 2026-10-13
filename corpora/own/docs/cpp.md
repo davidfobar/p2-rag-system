@@ -1,0 +1,67 @@
+# Writing Basic Tests with C++ with GTest
+
+Writing Basic Tests with C++ with GTest
+***************************************
+
+Starting point: we'll assume you have a basic ament_cmake package set
+up already and you want to add some tests to it.
+
+In this tutorial, we'll be using gtest.
+
+Package Setup
+=============
+
+Source Code
+-----------
+
+We'll start off with our code in a file called
+"test/tutorial_test.cpp"
+
+   #include <gtest/gtest.h>
+
+   TEST(package_name, a_first_test)
+   {
+     ASSERT_EQ(4, 2 + 2);
+   }
+
+   int main(int argc, char ** argv)
+   {
+     testing::InitGoogleTest(&argc, argv);
+     return RUN_ALL_TESTS();
+   }
+
+package.xml
+-----------
+
+Add the following line to "package.xml"
+
+   <test_depend>ament_cmake_gtest</test_depend>
+
+CMakeLists.txt
+--------------
+
+   if(BUILD_TESTING)
+     find_package(ament_cmake_gtest REQUIRED)
+     ament_add_gtest(${PROJECT_NAME}_tutorial_test test/tutorial_test.cpp)
+     target_include_directories(${PROJECT_NAME}_tutorial_test PUBLIC
+       $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+       $<INSTALL_INTERFACE:include>
+     )
+     # target_link_libraries(${PROJECT_NAME}_tutorial_test name_of_local_library)
+   endif()
+
+The testing code is wrapped in the "if/endif" block to avoid building
+tests where possible. "ament_add_gtest" functions much like
+"add_executable" so you'll need to call "target_include_directories"
+and "target_link_libraries" as you normally would. The
+"target_link_libraries" call is shown commented out because
+"name_of_local_library" is a placeholder, uncomment it and replace
+"name_of_local_library" with the actual target name from your
+"add_library()" call only if your tests depend on a library built in
+this package.
+
+Running Tests
+=============
+
+See the tutorial on how to run tests from the command line for more
+information on running the tests and inspecting the test results.
