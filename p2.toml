@@ -5,7 +5,7 @@
 # retrievers with cfg.table("dense").
 
 # "498E" or "598E"; 598E switches on the checks for the rider.
-section = "498E"
+section = "598E"
 
 [run]
 # How many documents each query keeps in a run file.
@@ -31,3 +31,9 @@ top = 5
 [claude]
 # The model for every claude -p call (the reranker and the answers).
 model = "sonnet"
+
+[dense]
+# The embedding model for p2/retrievers/dense.py (a fastembed or model2vec name).
+model = "BAAI/bge-small-en-v1.5"
+# Put in front of each query before it is encoded; "" is the lab's plain bge arm.
+query_prefix = ""
