@@ -128,7 +128,7 @@ What is it, where did it come from, how many documents and how many megabytes, a
 Name the one or two documents you were least sure about and what you decided.
 Say which of the allowed sources in the brief it comes from.
 
-TODO: describe your corpus and its license basis.
+I used Wikipedia since the OpenStax license was not acceptable. Wikipedia maintains a CC BY-SA license.
 
 ### The gold set
 
@@ -137,7 +137,7 @@ How did you decide that a document is relevant: write your relevance rule in two
 How did you find candidates (the systems' top 10, a keyword search, reading), and did you read every document before you labeled it?
 Your labels are binary (`rel` 1) unless you say otherwise: if you use graded labels, declare the scale here, for example 2 means the document answers the query fully and 1 means it helps.
 
-TODO: describe your gold set and your relevance rule.
+I made a list of 40 queries, each best supported by a specific document in the corpora. I based the relivance from my experience teaching undergradtuate physics.
 
 ---
 
