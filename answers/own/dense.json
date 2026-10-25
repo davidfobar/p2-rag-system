@@ -1,0 +1,121 @@
+{
+  "label": "dense",
+  "system": "dense",
+  "corpus": "own",
+  "model": "sonnet",
+  "chunking": {
+    "words": 300,
+    "overlap": 50
+  },
+  "top": 5,
+  "prompt_sha256": "4418806497c799a1",
+  "repeat": null,
+  "answers": [
+    {
+      "qid": "q01",
+      "question": "Why is the sky blue?",
+      "kind": "out",
+      "system": "dense",
+      "retrieved": [
+        "on_the_coloured_light_of_the_binary_stars_and_some_other_stars_o#0",
+        "on_the_coloured_light_of_the_binary_stars_and_some_other_stars_o#3",
+        "on_the_coloured_light_of_the_binary_stars_and_some_other_stars_o#2",
+        "rotational_brownian_motion_-astronomy#0",
+        "radiation_pressure#16"
+      ],
+      "answer": "The provided chunks do not explain why the sky is blue.",
+      "not_found": true,
+      "claims": [],
+      "seconds": 3.6,
+      "input_tokens": 5100,
+      "output_tokens": 115,
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "qid": "q02",
+      "question": "How high above a loop must a roller coaster start in order to complete the loop?",
+      "kind": "in",
+      "system": "dense",
+      "retrieved": [
+        "jerk_-physics#11",
+        "jerk_-physics#12",
+        "normal_force#4",
+        "parbuckle_salvage#4",
+        "normal_force#5"
+      ],
+      "answer": "The chunks don't say how high a roller coaster must start to complete a loop. They only say that rollercoasters use track transitions to limit jerk, and that entering a loop can produce accelerations of around 4g.",
+      "not_found": true,
+      "claims": [],
+      "seconds": 3.9,
+      "input_tokens": 4612,
+      "output_tokens": 163,
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "qid": "q03",
+      "question": "How does a bicycle stay upright when I am riding no-handed?",
+      "kind": "in",
+      "system": "dense",
+      "retrieved": [
+        "roberval_balance#3",
+        "speed_wobble#2",
+        "rolling#1",
+        "roberval_balance#1",
+        "normal_force#5"
+      ],
+      "answer": "The chunks don't explain how a bicycle stays upright when ridden no-handed. The speed wobble chunk covers bicycle wobble or shimmy, but not self-stability.",
+      "not_found": true,
+      "claims": [],
+      "seconds": 5.0,
+      "input_tokens": 4192,
+      "output_tokens": 155,
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "qid": "q04",
+      "question": "Explain how a pendulum can be used to keep time.",
+      "kind": "in",
+      "system": "dense",
+      "retrieved": [
+        "rayleighlorentz_pendulum#2",
+        "generalized_coordinates#7",
+        "simple_harmonic_motion#6",
+        "synchronous_frame#6",
+        "anharmonicity#1"
+      ],
+      "answer": "The chunks don't mention clocks or timekeeping directly, but they describe the property that makes a pendulum useful for it: a steady period. For small swings a pendulum behaves as a simple harmonic oscillator, which always has the same period whatever the amplitude. The period depends on length and gravity but not on mass or amplitude, so counting swings measures elapsed time. The period varies slightly with location and height, and large swings are anharmonic, so the period can then depend on amplitude.",
+      "not_found": false,
+      "claims": [
+        {
+          "text": "For small swings, a pendulum's motion is approximated by simple harmonic motion.",
+          "chunk_id": "simple_harmonic_motion#6",
+          "quote": "In the small-angle approximation, the motion of a simple pendulum is approximated by simple harmonic motion."
+        },
+        {
+          "text": "A harmonic oscillator can have any amplitude but always has the same period.",
+          "chunk_id": "anharmonicity#1",
+          "quote": "x may oscillate with any amplitude, but will always have the same period."
+        },
+        {
+          "text": "The pendulum's period is independent of amplitude and mass.",
+          "chunk_id": "simple_harmonic_motion#6",
+          "quote": "This shows that the period of oscillation is independent of the amplitude and mass of the pendulum"
+        },
+        {
+          "text": "The period varies slightly with location and height above sea level.",
+          "chunk_id": "simple_harmonic_motion#6",
+          "quote": "the time period will vary slightly from place to place and will also vary with height above sea level."
+        },
+        {
+          "text": "For anharmonic oscillation, the period may depend on amplitude.",
+          "chunk_id": "anharmonicity#1",
+          "quote": "the anharmonic oscillator's period of oscillation may depend on its amplitude of oscillation."
+        }
+      ],
+      "seconds": 11.0,
+      "input_tokens": 8483,
+      "output_tokens": 1388,
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}

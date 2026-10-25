@@ -1,0 +1,5 @@
+# Cited-answer questions for the own corpus: qid<TAB>kind<TAB>question<TAB>gold docids.
+q01	out	Why is the sky blue?	-
+q02	in	How high above a loop must a roller coaster start in order to complete the loop?	circular_motion
+q03	in	How does a bicycle stay upright when I am riding no-handed?	speed_wobble
+q04	in	Explain how a pendulum can be used to keep time.	simple_harmonic_motion
