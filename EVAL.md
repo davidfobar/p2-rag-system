@@ -25,7 +25,9 @@ The minimum detectable difference is the smallest gap this many queries could re
 
 For each of `dense`, `hybrid` and `rerank`, one or two sentences: the embedding model, how documents were chunked, what was fused and how, how many candidates the reranker saw, and anything you changed from the 12 and 13 lab code.
 
-TODO: describe your three systems.
+Dense: the bge-small-en-v1.5 embedding model is used with cosine similarity for vector comparison.
+Hybrid: fuses bm25 and dense with a reciprocal rank fusion. This means that similar rankings get more weight than vastly different rankings.
+rerank: get top 20 using hybrd, pass all 20 queries and hybrid results. The reply is restricted to a set of integers that provides the LLM rankings.
 
 ### Practice queries (20)
 

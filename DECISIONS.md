@@ -26,7 +26,7 @@ Commit this answer before your first `uv run p2 score` on the own corpus.
 Git history then shows that the expectation came first, which is what lets it be wrong in a way that teaches you something.
 If you were surprised later, say so in prompt 4 or in EVAL.md; do not come back and rewrite this one.
 
-TODO: your answer to prompt 1.
+I choose to use the Wikipedia articles on classical mechanics. I wanted to use the OpenStax University Text Book, but the license did not support for this project. The topic was selected since it was the book that I taught Physics 1  from, and I have familiarity with questions that students often ask while studying.
 
 ---
 
@@ -41,7 +41,7 @@ If you rejected the alternative without measuring it, say why that was a fair ca
 "There was no alternative" is not an answer.
 Find the fork.
 
-TODO: your answer to prompt 2.
+I wanted to use the OpenStax text book split by sections, but the license did not support this project. So instead I opted to have Claude write a script that pulls at a depth of 1 starting at classical mechanics. The script was then refined to exclude articles that were too long or too short. Also, to fit the context restriction, not all documents were injected, rather they were shuffled and then once a limit was reached, no more documents were used.
 
 ---
 

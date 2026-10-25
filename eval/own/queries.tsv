@@ -2,3 +2,43 @@
 # origin is hand when you wrote the query yourself and claude when a model drafted it; at least 10 must be hand.
 # class is a word you choose, for example identifier, paraphrase or mixed as in the shared sets; scores are reported per class.
 # Lines that start with # are comments, so delete these lines or keep them, as you like.
+c01	identifier	Poisson bracket	claude
+c02	identifier	tennis racket theorem	claude
+c03	identifier	Coulomb's law	claude
+c04	identifier	falling cat problem	claude
+c05	paraphrase	why does a cat always land on its feet	claude
+c06	paraphrase	how does a wheel roll without slipping	claude
+c07	paraphrase	can light push on an object	claude
+c08	paraphrase	what force keeps a ball moving in a circle on a string	claude
+c09	paraphrase	how does a block and tackle reduce the force needed to lift a load	claude
+c10	paraphrase	why does a boat float	claude
+c11	paraphrase	how can a space station create artificial gravity	claude
+c12	paraphrase	what happens to the motion of two objects that collide and stick together	claude
+c13	paraphrase	how do I add up several forces acting on one object	claude
+c14	paraphrase	why does a mass on a spring oscillate back and forth	claude
+c15	paraphrase	what makes a truss strong enough to hold up a bridge	claude
+c16	paraphrase	how do engineers find where a beam bends the most	claude
+c17	paraphrase	how does the moon cause ocean tides	claude
+c18	paraphrase	what does it mean for a force to be conservative	claude
+c19	paraphrase	what happens to vibrations when friction damps the motion	claude
+c20	mixed	pendulum whose support point moves	claude
+c21	mixed	how a spacecraft controls its orientation	claude
+c22	mixed	a spacecraft orbit around a Lagrange point	claude
+c23	mixed	jerk as the rate of change of acceleration	claude
+c24	mixed	how planets change their orbits over time by interacting with a disk	claude
+c25	mixed	Newton's laws in an accelerating or rotating reference frame	claude
+c26	mixed	energy stored in a stretched elastic material	claude
+c27	mixed	equation of state relating pressure and density in a solid	claude
+c28	mixed	natural vibration modes of a plate	claude
+c29	identifier	units of mass	hand
+c30	identifier	units of temperature	hand
+c31	identifier	electrostatic charge	hand
+c32	paraphrase	why does oil float on water	hand
+c33	paraphrase	what is temperature	hand
+c34	paraphrase	how do I convert revolutions per minute to angular speed	hand
+c35	paraphrase	why do two light waves make bright and dark stripes together	hand
+c36	paraphrase	how far does a thrown ball travel before it lands	hand
+c37	paraphrase	why do I feel pushed outward when a car turns a corner	hand
+c38	paraphrase	how do I draw a diagram showing all the forces acting on an object	hand
+c39	paraphrase	what is a change in acceleration	hand
+c40	paraphrase	what is the rocket equation	hand
