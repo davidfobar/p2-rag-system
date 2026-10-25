@@ -267,7 +267,7 @@ What did you change, what happened, and does the interval support the claim you 
 If the result is not distinguishable, say what size of effect your gold set could have seen.
 Read the queries at the top of each list in the second table, and say whether your change explains them.
 
-TODO: write the ablation: the one change, the hypothesis, the result and the claim.
+Given that dense is highly accurate, outperforming the hybrid model, I will change the hybrid model to place more weight in the dense model while still taking into account bm25. I expect the hybrid results to improve as a result of the change, which can have downstream impacts to rerank as well.
 
 ---
 
