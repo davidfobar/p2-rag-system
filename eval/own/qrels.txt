@@ -2,3 +2,44 @@
 # rel is 1 for a relevant document, unless EVAL.md declares graded labels; every query needs at least one relevant document.
 # 598E: commit your filled-in PREREG.md before the first judgment line goes into this file.
 # Lines that start with # are comments.
+
+c01 0 poisson_bracket 1
+c02 0 tennis_racket_theorem 1
+c03 0 coulomb-s_law 1
+c04 0 falling_cat_problem 1
+c05 0 falling_cat_problem 1
+c06 0 rolling 1
+c07 0 radiation_pressure 1
+c08 0 centrifugal_force 1
+c09 0 block_and_tackle 1
+c10 0 buoyancy 1
+c11 0 artificial_gravity 1
+c12 0 inelastic_collision 1
+c13 0 net_force 1
+c14 0 simple_harmonic_motion 1
+c15 0 truss 1
+c16 0 bending 1
+c17 0 theory_of_tides 1
+c18 0 conservative_force 1
+c19 0 damping 1
+c20 0 holonomic_constraints 1
+c21 0 spacecraft_attitude_determination_and_control 1
+c22 0 halo_orbit 1
+c23 0 jerk_-physics 1
+c24 0 planetary_migration 1
+c25 0 non-inertial_reference_frame 1
+c26 0 elastic_energy 1
+c27 0 equation_of_state 1
+c28 0 vibration_of_plates 1
+c29 0 body_force 1
+c30 0 equation_of_state 1
+c31 0 coulomb-s_law 1
+c32 0 buoyancy 1
+c33 0 equation_of_state 1
+c34 0 revolutions_per_minute 1
+c35 0 diffraction_from_slits 1
+c36 0 projectile_motion 1
+c37 0 centrifugal_force 1
+c38 0 free_body_diagram 1
+c39 0 jerk_-physics 1
+c40 0 jet_force 1
