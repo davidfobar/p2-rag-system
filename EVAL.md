@@ -99,14 +99,16 @@ Which differences are distinguishable from zero and which are not?
 What is the minimum detectable difference at 20 queries, and what does that say about any gap smaller than it?
 Which claim from lecture 12 or 13 did your numbers support, and which did they leave open?
 
-TODO: write what the practice-query intervals let you claim.
+That the rerank provides meaningful utility to a RAG system
 
 ---
 
 ## 2. Stage 1 - cited answers on the 12 shared questions
 
 <!-- p2:begin answers -->
-_No answers files yet: run `uv run p2 answer --corpus shared --system NAME`, then `uv run p2 score`._
+| Label | System | Verified (in) | 95% interval | not_found (in) | Declined (out) | 95% interval | Quotes found |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| rerank | rerank | 8 of 8 (100%) | [0.676, 1.000] | 0 of 8 (0%) | 4 of 4 (100%) | [0.510, 1.000] | 13 of 13 |
 <!-- p2:end answers -->
 
 Which system answered, and why that one?
@@ -116,7 +118,7 @@ Then read three in-corpus answers that `uv run p2 verify` passed.
 For each one, open the cited chunk and say whether the quote really supports the claim next to it.
 The check proves a quote is a real piece of the chunk and cannot prove that it supports the claim, so this reading is the part only you can do.
 
-TODO: write your answer choices and your three-answer audit.
+As far as I can tell (without being a mining expert), it would seem like the LLM/RAG successfully quotes correct documents.
 
 ---
 
@@ -240,7 +242,7 @@ Which differences are distinguishable and which are not, at your gold-set size?
 Do the `hand` queries and the `claude` queries tell the same story?
 Did your prediction in `DECISIONS.md` prompt 1 hold?
 
-TODO: write what your own-corpus intervals let you claim.
+With this contect, dense is able to perform as well as rerank, but in general adding rerank to the system does improve if tokens are available. The claude generated prompts do slighlty out perform the hand generated ones, specifically when the dense model is being used.
 
 ---
 
@@ -329,6 +331,7 @@ Every trace in traces/ that records a Claude call:
 
 | Trace | System | Spans | Claude calls | Saved | Input tokens | Output tokens | Seconds | Input per span | Output per span | Seconds per span |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| traces/answers-rerank.jsonl | rerank | 12 | 24 | 0 | 200,752 | 4,314 | 78.2 | 16,729 | 360 | 6.5 |
 | traces/own-own-rerank.jsonl | rerank | 40 | 40 | 0 | 718,434 | 3,762 | 119.8 | 17,961 | 94 | 3.0 |
 | traces/shared-practice-rerank.jsonl | rerank | 20 | 20 | 20 | 275,629 | 1,930 | 66.8 | 13,781 | 96 | 3.3 |
 | traces/shared-test-rerank.jsonl | rerank | 40 | 40 | 0 | 524,056 | 3,860 | 129.4 | 13,101 | 96 | 3.2 |

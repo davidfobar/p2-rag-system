@@ -93,7 +93,8 @@ Which row of the table in section 4 is it?
 Did your gold set reach the size section 3 asked for, and what was the minimum detectable difference that `uv run p2 score` printed?
 What would you do next, and what would you want a reader to take from this?
 
-TODO: your outcome.
+rerank minus hybrid	Recall@10	+0.050	[+0.000, +0.125]	0.098	not distinguishable
+I provided 40 queries for the test. Based off the results it seems that rerank does help, but not signficatnly enough if tokens are not widely available. When rerank is used, the most relevant doecument is often returned as the top target.
 
 ---
 
