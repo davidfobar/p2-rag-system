@@ -24,7 +24,7 @@ One sentence, about your own corpus, naming two of your systems and a direction.
 For example: "On my corpus of Kubernetes documentation, `rerank` has a higher MRR@10 than `hybrid`, because the queries are paraphrases that a first-stage fusion ranks too low."
 It should be something you could be wrong about.
 
-TODO: your hypothesis.
+On my corpus of Classical Mechanics articles from Wikipedia, I expect rerank to perform better. I expect that many documents will have similar vocabulary and that just matching words will not provide great results. Adding an LLM's judgement should help better identify relavant sources.
 
 ---
 
@@ -36,7 +36,7 @@ A difference of 0.02 is usually not worth a reranker's cost in time and tokens.
 In this course, choose a Δ of at least 0.15 unless you argue for a larger one, because a smaller gap takes more queries than one project can judge.
 Call your number Δ (delta).
 
-TODO: your metric and your Δ, with the reason.
+nDCG@10 with a Δ of 0.15 - I don't understand the expected scale of Δ, so I will go with the minumum. I choose nDCG since I think many queries will be answerable by multiple documents within the corpora.
 
 ---
 
@@ -65,7 +65,7 @@ After you score the own corpus, the minimum detectable difference that `uv run p
 It should come out at or below your Δ.
 If it does not, your queries varied more than your stage 1 sd suggested, and you will say so in the outcome.
 
-TODO: your sd, which pair it came from, your n, and the number of queries you will write (at least n).
+rerank and hybrid, with a sd of 0.29 which requires 30 queries. I plan to write 40.
 
 ---
 
@@ -82,7 +82,7 @@ This is the default rule, and you can tighten it, but do not loosen it after you
 | around zero, with both ends inside plus or minus Δ | well-powered null: a difference as large as Δ is ruled out |
 | around zero, with an end beyond plus or minus Δ | inconclusive: the gold set could not settle it, and I say so |
 
-TODO: confirm or tighten this rule, and name the two systems and the metric once more.
+confirmed, rerank and hybrid, nDCG
 
 ---
 
