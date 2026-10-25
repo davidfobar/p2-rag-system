@@ -1,0 +1,29 @@
+# Reactive centrifugal force
+
+Reactive centrifugal force
+
+In classical mechanics, a reactive centrifugal force forms part of an action–reaction pair with a centripetal force.
+In accordance with Newton's first law of motion, an object moves in a straight line in the absence of a net force acting on the object. A curved path ensues when a force that is orthogonal to the object's motion acts on it; this force is often called a centripetal force, as it is directed toward the center of curvature of the path. Then in accordance with Newton's third law of motion, there will also be an equal and opposite force exerted by the object on some other object, and this reaction force is sometimes called a reactive centrifugal force, as it is directed in the opposite direction of the centripetal force.
+In the case of a ball held in circular motion by a string, the centripetal force is the force exerted by the string on the ball. The reactive centrifugal force on the other hand is the force the ball exerts on the string, placing it under tension.
+Unlike the inertial force known as centrifugal force, which exists only in the rotating frame of reference, the reactive force is a real Newtonian force that is observed in any reference frame. The inertial and reactive forces will only have the same magnitude in the special cases where circular motion arises and where the axis of rotation is the origin of the rotating frame of reference.
+
+Paired forces
+
+The figure at right shows a ball in uniform circular motion held to its path by a string tied to an immovable post. In this system a centripetal force upon the ball provided by the string maintains the circular motion, and the reaction to it, which some refer to as the reactive centrifugal force, acts upon the string and the post.
+Newton's first law requires that any body moving along any path other than a straight line be subject to a net non-zero force, and the free body diagram shows the force upon the ball (center panel) exerted by the string to maintain the ball in its circular motion.
+Newton's third law of action and reaction states that if the string exerts an inward centripetal force on the ball, the ball will exert an equal but outward reaction upon the string, shown in the free body diagram of the string (lower panel) as the reactive centrifugal force.
+The string transmits the reactive centrifugal force from the ball to the fixed post, pulling upon the post. Again according to Newton's third law, the post exerts a reaction upon the string, labeled the post reaction, pulling upon the string. The two forces upon the string are equal and opposite, exerting no net force upon the string (assuming that the string is massless), but placing the string under tension.
+The reason the post appears to be "immovable" is because it is fixed to the earth. If the rotating ball was tethered to the mast of a boat, for example, the boat mast and ball would both experience rotation about a central point.
+
+Applications
+Even though the reactive centrifugal is rarely used in analyses in the physics literature, the concept is applied within some mechanical engineering concepts. An example of this kind of engineering concept is an analysis of the stresses within a rapidly rotating turbine blade. The blade can be treated as a stack of layers going from the axis out to the edge of the blade. Each layer exerts an outward (centrifugal) force on the immediately adjacent, radially inward layer and an inward (centripetal) force on the immediately adjacent, radially outward layer. At the same time the inner layer exerts an elastic centripetal force on the middle layer, while and the outer layer exerts an elastic centrifugal force, which results in an internal stress. It is the stresses in the blade and their causes that mainly interest mechanical engineers in this situation.
+
+Another example of a rotating device in which a reactive centrifugal force can be identified used to describe the system behavior is the centrifugal clutch. A centrifugal clutch is used in small engine-powered devices such as chain saws, go-karts and model helicopters. It allows the engine to start and idle without driving the device, but automatically and smoothly engages the drive as the engine speed rises. A spring is used to constrain the spinning clutch shoes. At low speeds, the spring provides the centripetal force to the shoes, which move to larger radius as the speed increases and the spring stretches under tension. At higher speeds, when the shoes can't move any further out to increase the spring tension, due to the outer drum, the drum provides some of the centripetal force that keeps the shoes moving in a circular path. The force of tension applied to the spring, and the outward force applied to the drum by the spinning shoes are the corresponding reactive centrifugal forces. The mutual force between the drum and the shoes provides the friction needed to engage the output drive shaft that is connected to the drum. Thus the centrifugal clutch illustrates both the fictitious centrifugal force and the reactive centrifugal force.
+
+Difference from centrifugal pseudoforce
+
+The "reactive centrifugal force" discussed in this article is not the same thing as the centrifugal pseudoforce, which is usually what is meant by the term "centrifugal force".
+Reactive centrifugal force, being one-half of the reaction pair together with centripetal force, is a concept which applies in any reference frame. This distinguishes it from the inertial or fictitious centrifugal force, which appears only in rotating frames.
+
+Gravitational two-body case
+In a two-body rotation, such as a planet and moon rotating about their common center of mass or barycentre, the forces on both bodies are centripetal. In that case, the reaction to the centripetal force of the planet on the moon is the centripetal force of the moon on the planet.

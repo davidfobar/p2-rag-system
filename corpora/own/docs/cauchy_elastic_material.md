@@ -1,0 +1,349 @@
+# Cauchy elastic material
+
+Cauchy elastic material
+
+In physics, a Cauchy-elastic material is one in which the stress at each point is determined only by the current state of deformation with respect to an arbitrary reference configuration. A Cauchy-elastic material is also called a simple elastic material.
+It follows from this definition that the stress in a Cauchy-elastic material does not depend on the path of deformation or the history of deformation, or on the time taken to achieve that deformation or the rate at which the state of deformation is reached. The definition also implies that the constitutive equations are spatially local; that is, the stress is only affected by the state of deformation in an infinitesimal neighborhood of the point in question, without regard for the deformation or motion of the rest of the material. It also implies that body forces (such as gravity), and inertial forces cannot affect the properties of the material. Finally, a Cauchy-elastic material must satisfy the requirements of material objectivity.
+Cauchy-elastic materials are mathematical abstractions, and no real material fits this definition perfectly. However, many elastic materials of practical interest, such as steel, plastic, wood and concrete, can often be assumed to be Cauchy-elastic for the purposes of stress analysis.
+
+Mathematical definition
+Formally, a material is said to be Cauchy-elastic if the Cauchy stress tensor
+
+          σ
+
+    {\displaystyle {\boldsymbol {\sigma }}}
+
+ is a function of the strain tensor (deformation gradient)
+
+          F
+
+    {\displaystyle {\boldsymbol {F}}}
+
+ alone:
+
+          σ
+
+            G
+
+        (
+
+          F
+
+        )
+
+    {\displaystyle \ {\boldsymbol {\sigma }}={\mathcal {G}}({\boldsymbol {F}})}
+
+This definition assumes that the effect of temperature can be ignored, and the body is homogeneous. This is the constitutive equation for a Cauchy-elastic material.
+Note that the function
+
+            G
+
+    {\displaystyle {\mathcal {G}}}
+
+ depends on the choice of reference configuration. Typically, the reference configuration is taken as the relaxed (zero-stress) configuration, but need not be.
+Material frame-indifference requires that the constitutive relation
+
+            G
+
+    {\displaystyle {\mathcal {G}}}
+
+ should not change when the location of the observer changes. Therefore the constitutive equation for another arbitrary observer can be written
+
+            σ
+
+            ∗
+
+            G
+
+        (
+
+            F
+
+            ∗
+
+        )
+
+    {\displaystyle {\boldsymbol {\sigma }}^{}={\mathcal {G}}({\boldsymbol {F}}^{})}
+
+. Knowing that the Cauchy stress tensor
+
+        σ
+
+    {\displaystyle \sigma }
+
+ and the deformation gradient
+
+        F
+
+    {\displaystyle F}
+
+ are objective quantities, one can write:
+
+                    σ
+
+                    ∗
+
+                    G
+
+                (
+
+                    F
+
+                    ∗
+
+                )
+
+                ⇒
+
+                  R
+
+                ⋅
+
+                  σ
+
+                ⋅
+
+                    R
+
+                    T
+
+                    G
+
+                (
+
+                  R
+
+                ⋅
+
+                  F
+
+                )
+
+                ⇒
+
+                  R
+
+                ⋅
+
+                    G
+
+                (
+
+                  F
+
+                )
+                ⋅
+
+                    R
+
+                    T
+
+                    G
+
+                (
+
+                  R
+
+                ⋅
+
+                  F
+
+                )
+
+    {\displaystyle {\begin{aligned}&{\boldsymbol {\sigma }}^{}&=&{\mathcal {G}}({\boldsymbol {F}}^{})\\Rightarrow &{\boldsymbol {R}}\cdot {\boldsymbol {\sigma }}\cdot {\boldsymbol {R}}^{T}&=&{\mathcal {G}}({\boldsymbol {R}}\cdot {\boldsymbol {F}})\\Rightarrow &{\boldsymbol {R}}\cdot {\mathcal {G}}({\boldsymbol {F}})\cdot {\boldsymbol {R}}^{T}&=&{\mathcal {G}}({\boldsymbol {R}}\cdot {\boldsymbol {F}})\end{aligned}}}
+
+where
+
+          R
+
+    {\displaystyle {\boldsymbol {R}}}
+
+ is a proper orthogonal tensor.
+The above is a condition that the constitutive law
+
+            G
+
+    {\displaystyle {\mathcal {G}}}
+
+ has to respect to make sure that the response of the material will be independent of the observer. Similar conditions can be derived for constitutive laws relating the deformation gradient to the first or second Piola-Kirchhoff stress tensor.
+
+Isotropic Cauchy-elastic materials
+For an isotropic material the Cauchy stress tensor
+
+          σ
+
+    {\displaystyle {\boldsymbol {\sigma }}}
+
+ can be expressed as a function of the left Cauchy-Green tensor
+
+          B
+
+          F
+
+        ⋅
+
+            F
+
+            T
+
+    {\displaystyle {\boldsymbol {B}}={\boldsymbol {F}}\cdot {\boldsymbol {F}}^{T}}
+
+. The constitutive equation may then be written:
+
+          σ
+
+            H
+
+        (
+
+          B
+
+        )
+        .
+
+    {\displaystyle \ {\boldsymbol {\sigma }}={\mathcal {H}}({\boldsymbol {B}}).}
+
+In order to find the restriction on
+
+        h
+
+    {\displaystyle h}
+
+ which will ensure the principle of material frame-indifference, one can write:
+
+                    σ
+
+                    ∗
+
+                    H
+
+                (
+
+                    B
+
+                    ∗
+
+                )
+
+                ⇒
+
+                  R
+
+                ⋅
+
+                  σ
+
+                ⋅
+
+                    R
+
+                    T
+
+                    H
+
+                (
+
+                    F
+
+                    ∗
+
+                ⋅
+                (
+
+                    F
+
+                    ∗
+
+                  )
+
+                    T
+
+                )
+
+                ⇒
+
+                  R
+
+                ⋅
+
+                    H
+
+                (
+
+                  B
+
+                )
+                ⋅
+
+                    R
+
+                    T
+
+                    H
+
+                (
+
+                  R
+
+                ⋅
+
+                  F
+
+                ⋅
+
+                    F
+
+                    T
+
+                ⋅
+
+                    R
+
+                    T
+
+                )
+
+                ⇒
+
+                  R
+
+                ⋅
+
+                    H
+
+                (
+
+                  B
+
+                )
+                ⋅
+
+                    R
+
+                    T
+
+                    H
+
+                (
+
+                  R
+
+                ⋅
+
+                  B
+
+                ⋅
+
+                    R
+
+                    T
+
+                )
+                .
+
+    {\displaystyle \ {\begin{array}{rrcl}&{\boldsymbol {\sigma }}^{}&=&{\mathcal {H}}({\boldsymbol {B}}^{})\\Rightarrow &{\boldsymbol {R}}\cdot {\boldsymbol {\sigma }}\cdot {\boldsymbol {R}}^{T}&=&{\mathcal {H}}({\boldsymbol {F}}^{}\cdot ({\boldsymbol {F}}^{})^{T})\\Rightarrow &{\boldsymbol {R}}\cdot {\mathcal {H}}({\boldsymbol {B}})\cdot {\boldsymbol {R}}^{T}&=&{\mathcal {H}}({\boldsymbol {R}}\cdot {\boldsymbol {F}}\cdot {\boldsymbol {F}}^{T}\cdot {\boldsymbol {R}}^{T})\\Rightarrow &{\boldsymbol {R}}\cdot {\mathcal {H}}({\boldsymbol {B}})\cdot {\boldsymbol {R}}^{T}&=&{\mathcal {H}}({\boldsymbol {R}}\cdot {\boldsymbol {B}}\cdot {\boldsymbol {R}}^{T}).\end{array}}}
+
+A constitutive equation that respects the above condition is said to be isotropic.
+
+Non-conservative materials
+Even though the stress in a Cauchy-elastic material depends only on the state of deformation, the work done by stresses may depend on the path of deformation. Therefore a Cauchy elastic material in general has a non-conservative structure, and the stress cannot necessarily be derived from a scalar "elastic potential" function. Materials that are conservative in this sense are called hyperelastic or "Green-elastic".

@@ -1,0 +1,260 @@
+# Potential well
+
+Potential well
+
+A potential well is the region surrounding a local minimum of potential energy. Energy captured in a potential well is unable to convert to another type of energy (kinetic energy in the case of a gravitational potential well) because it is captured in the local minimum of a potential well. Therefore, a body may not proceed to the global minimum of potential energy, as it would naturally tend to do due to entropy.
+
+Overview
+Energy may be released from a potential well if sufficient energy is added to the system such that the local maximum is surmounted. In quantum physics, potential energy may escape a potential well without added energy due to the probabilistic characteristics of quantum particles; in these cases a particle may be imagined to tunnel through the walls of a potential well.
+The graph of a 2D potential energy function is a potential energy surface that can be imagined as the Earth's surface in a landscape of hills and valleys. Then a potential well would be a valley surrounded on all sides with higher terrain, which thus could be filled with water (e.g., be a lake) without any water flowing away toward another, lower minimum (e.g. sea level).
+In the case of gravity, the region around a mass is a gravitational potential well, unless the density of the mass is so low that tidal forces from other masses are greater than the gravity of the body itself.
+A potential hill is the opposite of a potential well, and is the region surrounding a local maximum.
+
+Quantum confinement
+
+Quantum confinement can be observed once the diameter of a material is of the same magnitude as the de Broglie wavelength of the electron wave function. When materials are this small, their electronic and optical properties deviate substantially from those of bulk materials.
+A particle behaves as if it were free when the confining dimension is large compared to the wavelength of the particle. During this state, the bandgap remains at its original energy due to a continuous energy state. However, as the confining dimension decreases and reaches a certain limit, typically in nanoscale, the energy spectrum becomes discrete. As a result, the bandgap becomes size-dependent. As the size of the particles decreases, the electrons and electron holes come closer, and the energy required to activate them increases, which ultimately results in a blueshift in light emission.
+Specifically, the effect describes the phenomenon resulting from electrons and electron holes being squeezed into a dimension that approaches a critical quantum measurement, called the exciton Bohr radius. In current application, a quantum dot such as a small sphere confines in three dimensions, a quantum wire confines in two dimensions, and a quantum well confines only in one dimension. These are also known as zero-, one- and two-dimensional potential wells, respectively. In these cases they refer to the number of dimensions in which a confined particle can act as a free carrier. See external links, below, for application examples in biotechnology and solar cell technology.
+
+Quantum mechanics view
+
+The electronic and optical properties of materials are affected by size and shape. Well-established technical achievements including quantum dots were derived from size manipulation and investigation for their theoretical corroboration on quantum confinement effect. The major part of the theory is the behaviour of the exciton resembles that of an atom as its surrounding space shortens. A rather good approximation of an exciton's behaviour is the 3-D model of a particle in a box. The solution of this problem provides a sole mathematical connection between energy states and the dimension of space. Decreasing the volume or the dimensions of the available space, increases the energy of the states. Shown in the diagram is the change in electron energy level and bandgap between nanomaterial and its bulk state.
+The following equation shows the relationship between energy level and dimension spacing:
+
+          ψ
+
+              n
+
+                x
+
+            ,
+
+              n
+
+                y
+
+            ,
+
+              n
+
+                z
+
+              8
+
+                  L
+
+                    x
+
+                  L
+
+                    y
+
+                  L
+
+                    z
+
+        sin
+        ⁡
+
+          (
+
+                  n
+
+                    x
+
+                π
+                x
+
+                L
+
+                  x
+
+          )
+
+        sin
+        ⁡
+
+          (
+
+                  n
+
+                    y
+
+                π
+                y
+
+                L
+
+                  y
+
+          )
+
+        sin
+        ⁡
+
+          (
+
+                  n
+
+                    z
+
+                π
+                z
+
+                L
+
+                  z
+
+          )
+
+    {\displaystyle \psi {n{x},n_{y},n_{z}}={\sqrt {\frac {8}{L_{x}L_{y}L_{z}}}}\sin \left({\frac {n_{x}\pi x}{L_{x}}}\right)\sin \left({\frac {n_{y}\pi y}{L_{y}}}\right)\sin \left({\frac {n_{z}\pi z}{L_{z}}}\right)}
+
+          E
+
+              n
+
+                x
+
+            ,
+
+              n
+
+                y
+
+            ,
+
+              n
+
+                z
+
+                ℏ
+
+                  2
+
+                π
+
+                  2
+
+              2
+              m
+
+          [
+
+                (
+
+                      n
+
+                        x
+
+                      L
+
+                        x
+
+                )
+
+                2
+
+            +
+
+                (
+
+                      n
+
+                        y
+
+                      L
+
+                        y
+
+                )
+
+                2
+
+            +
+
+                (
+
+                      n
+
+                        z
+
+                      L
+
+                        z
+
+                )
+
+                2
+
+          ]
+
+    {\displaystyle E_{n_{x},n_{y},n_{z}}={\frac {\hbar ^{2}\pi ^{2}}{2m}}\left[\left({\frac {n_{x}}{L_{x}}}\right)^{2}+\left({\frac {n_{y}}{L_{y}}}\right)^{2}+\left({\frac {n_{z}}{L_{z}}}\right)^{2}\right]}
+
+Classical mechanics view
+
+The Young–Laplace equation can give a background on the investigation of the scale of forces applied to the surface molecules:
+
+                Δ
+                P
+
+                γ
+                ∇
+                ⋅
+
+                      n
+                      ^
+
+                2
+                γ
+                H
+
+                γ
+
+                  (
+
+                        1
+
+                          R
+
+                            1
+
+                    +
+
+                        1
+
+                          R
+
+                            2
+
+                  )
+
+    {\displaystyle {\begin{aligned}\Delta P&=\gamma \nabla \cdot {\hat {n}}\&=2\gamma H\&=\gamma \left({\frac {1}{R_{1}}}+{\frac {1}{R_{2}}}\right)\end{aligned}}}
+
+Under the assumption of spherical shape
+
+          R
+
+            1
+
+          R
+
+            2
+
+        R
+
+    {\displaystyle R_{1}=R_{2}=R}
+
+ and resolving the Young–Laplace equation for the new radii
+
+        R
+
+    {\displaystyle R}
+
+ (nm), we estimate the new
+
+        Δ
+        P
+
+    {\displaystyle \Delta P}
+
+(GPa). The smaller the radii, the greater the pressure is present. The increase in pressure at the nanoscale results in strong forces toward the interior of the particle. Consequently, the molecular structure of the particle appears to be different from the bulk mode, especially at the surface. These abnormalities at the surface are responsible for changes of inter-atomic interactions and bandgap.
