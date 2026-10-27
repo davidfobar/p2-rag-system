@@ -57,7 +57,7 @@ What did you do instead?
 If it genuinely never happened, say so plainly, and then say what you would have had to check in order to notice.
 Being honest here costs you far less than a story you cannot defend when you record your video.
 
-TODO: your answer to prompt 3.
+While developing the gold set, the agent made many recommendations on which articles best supported the query, but I often found that it provided a poor match compared to my teaching experience. It seemed that the agent focused on the article title more than the content of the article.
 
 ---
 
@@ -69,7 +69,7 @@ It could be a mean over a small query class, a difference whose interval include
 What would have to be true for you to trust it?
 Did you do anything to test it, and what did that show?
 
-TODO: your answer to prompt 4.
+In general, I did not expect the dense model to perform as well as it did. I had to modify the hybrid model to rely more on dense than bm25 as a result. I still think that the rerank is useful in order to get more accurate results.
 
 ---
 
@@ -80,4 +80,4 @@ One thing in your system, your corpus or your gold set that is not right, not fi
 What would you do next, and how would you find out whether it matters?
 Name the file, the query or the document where someone could look.
 
-TODO: your answer to prompt 5.
+This project had too many requirements scattered throughout too many files. I eventually gathered enough information to understand most of the requirements, but I had to rely on an agent in order to know what I needed to modify next in almost all steps of the project. I also do not like that this project did not result in asking questions to the RAG system to evaluate the generation of responses using our own corpora. I did ask quesions, and in general, I think my corpora is too small to be of general use to a student learning undergraduate physics, however, that could also be limited by the license requriement pushing me to use Wikipedia articles rather than the OpenStax textbook that I wanted to use. 

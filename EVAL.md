@@ -326,10 +326,15 @@ Pick the queries where your best system on your own corpus failed: the relevant 
 Take at least five, and read what the system returned next to what was relevant.
 Then sort the failures by cause, for example a vocabulary mismatch, near-duplicate documents, a chunk that cut the answer in half, a query that is ambiguous, or a label that was wrong, because sometimes the gold set is what failed.
 
-| qid | what the best system returned | what was relevant | cause | what you would try |
-|---|---|---|---|---|
+| qid | Query | Top Doc Returned | Issue |
+| --- | --- | --- | --- |
+| c33 |	what is temperature (paraphrase, hand) |	tropical_instability_waves | The corpora does not include a concise explaination to satisfy the query |
+| c20 |	pendulum whose support point moves (mixed, claude) |	rayleighlorentz_pendulum |	holonomic_constraints would have best answered the query, but the keywords are sparse |
+| c29 |	units of mass (identifier, hand) |	area_density |	The physics definition is in the form of equations, which must have not injested into the model very well |
+| c35 |	why do two light waves make bright and dark stripes together (paraphrase, hand) |	fringe_shift |	wave_interference best answers this question, but infering defraction and interference patterns from the prompt is challenging, so keyword matching led to a bad result |
+| c27 |	equation of state relating pressure and density in a solid (mixed, claude) |	murnaghan_equation_of_state	|The corpora does not have a topic that directly addresses the question |
 
-TODO: add one row for each failure you analyzed, and write two or three sentences on the pattern you see across them.
+In general, the failures are the result of the corpora not having a clear winner for the best article, or that the question was phrased in a way where knowledge must be applied in order to understand what is really being asked.
 
 ---
 
@@ -342,7 +347,7 @@ Did the winner change between the shared corpus and yours?
 Why, or why not: what is different about the two collections (document length, vocabulary, identifiers, near-duplicates, how the queries were written), and which of your explanations did you test and which are guesses?
 Say what 20 queries on one side and your gold-set size on the other cannot support.
 
-TODO: write the cross-corpus comparison.
+no, the rerank model is the best on both corpora, but on my own corpora rerank is not distinguishable from dense. bm25 performs poorly within my corpora, but also the queries are more conceptual questions rather then attempting to identify a specific phrase or refernce number. Additionally, my corpora had longer documents than the shared, and if the document was math/equation heavy it could end up being poorly formatted. If the corpora was recreated, a different ingest method would likely provide better results - maybe get the latex source.
 
 ---
 
@@ -352,13 +357,7 @@ TODO: write the cross-corpus comparison.
 It is optional, so `uv run p2 check --final` never waits on this section.
 598E: the rider is your stretch, so write "rider" below and put its results in section 9; the other options add no points, because the project is capped at 150.
 
-Whichever option you chose, write these five things:
-
-1. The option's name.
-2. What you did, and the files that hold it.
-3. The table `p2 score` wrote for it, by name: one of the three below, `own-ablation` and `own-ablation-queries` in section 5 for a second ablation, `own-origins` in section 4 for the hand and claude queries, or `repeats` in section 9 for the rider.
-4. What its interval lets you claim, and what it does not.
-5. One thing you would do next, and what result would tell you it worked.
+rider
 
 For a second ablation, write its hypothesis here before you run it, and commit it, so your history shows that it came first.
 For the hand and claude queries, do the same with your prediction before you score.
@@ -434,7 +433,11 @@ _No stretch runs yet (stretch option 5): `uv run p2 run --corpus own --queries e
 ### Your stretch
 
 Write the five things here.
-
+ablation study
+2. What you did, and the files that hold it.
+3. The table `p2 score` wrote for it, by name: one of the three below, `own-ablation` and `own-ablation-queries` in section 5 for a second ablation, `own-origins` in section 4 for the hand and claude queries, or `repeats` in section 9 for the rider.
+4. What its interval lets you claim, and what it does not.
+5. One thing you would do next, and what result would tell you it worked.
 ---
 
 ## 9. 598E only - repeats and the pre-registered claim
