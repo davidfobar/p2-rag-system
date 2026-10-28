@@ -486,7 +486,7 @@ Each repeat answers the same questions, so the repeats are not independent trial
 Does the reranker's gain over its first stage survive the run-to-run variation?
 Write what the spread is, how it compares with the gain, and what the Wilson intervals on the verified share and the declined share say about 8 and 4 questions.
 
-598E: write the repeats result here.
+The three runs essentially have no difference between them. All three files verified 8 of 8 and declined 4 of 4. With so few questions, the Wilson intervals are still wide: [0.676, 1.000] for verified and [0.510, 1.000] for declined. A perfect score on 8 or 4 questions doesn't show the true rate is near 100% - more testing would be requried.
 
 ### The pre-registered claim
 
@@ -494,4 +494,8 @@ The claim, the smallest effect, the gold-set size and the test are in `PREREG.md
 Here, say whether you followed the plan, what the interval turned out to be, and what that means.
 The outcome section of `PREREG.md` holds the short version.
 
-598E: write the claim and its outcome here.
+rerank minus hybrid	Recall@10	+0.050	[+0.000, +0.125]	0.098	not distinguishable
+I provided 40 queries for the test. Based off the results it seems that rerank does help, but not signficatnly enough if tokens are not widely available. When rerank is used, the most relevant doecument is often returned as the top target.
+
+
+The plan was followed, and the difference turned out to not be distinguishable, though I think that was more a result of the Gold set not being fully appropriate. Some questions were not  answerable by the corpora, and some where not clearly written in a manner that leaves a single best item to describe the answer. 
